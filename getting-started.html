@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Tracker - Getting Started</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2DD4AB;
+            border-bottom: 2px solid #5CECC6;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #333;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .button {
+            display: inline-block;
+            background-color: #2DD4AB;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #5CECC6;
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .steps {
+            margin-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project Tracker - Getting Started</h1>
+    
+    <p>Welcome to Project Tracker! This application helps you manage your projects and tasks from start to finish.</p>
+    
+    <div class="card">
+        <h2>Quick Start</h2>
+        
+        <h3>Windows Users</h3>
+        <ol class="steps">
+            <li>Double-click the <code>install.bat</code> file</li>
+            <li>The script will check if Node.js is installed, install dependencies, and start the application</li>
+            <li>The application will open in your default browser at <a href="http://localhost:3000">http://localhost:3000</a></li>
+        </ol>
+        
+        <h3>macOS/Linux Users</h3>
+        <ol class="steps">
+            <li>Open Terminal in the project directory</li>
+            <li>Make the script executable: <code>chmod +x install.sh</code></li>
+            <li>Run the script: <code>./install.sh</code></li>
+            <li>The application will open in your default browser at <a href="http://localhost:3000">http://localhost:3000</a></li>
+        </ol>
+    </div>
+    
+    <div class="card">
+        <h2>Prerequisites</h2>
+        <p>Before you start, make sure you have the following installed:</p>
+        <ul>
+            <li><strong>Node.js 18+</strong> - <a href="https://nodejs.org/" target="_blank">Download from nodejs.org</a></li>
+            <li><strong>npm</strong> (comes with Node.js) or <strong>yarn</strong></li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>Manual Installation</h2>
+        <p>If the quick start scripts don't work for you, follow these steps:</p>
+        <ol class="steps">
+            <li>Open a terminal/command prompt</li>
+            <li>Navigate to the project directory:
+                <br><code>cd path/to/project-planner</code>
+            </li>
+            <li>Install dependencies:
+                <br><code>npm install</code>
+                <br>or
+                <br><code>yarn install</code>
+            </li>
+            <li>Run the development server:
+                <br><code>npm run dev</code>
+                <br>or
+                <br><code>yarn dev</code>
+            </li>
+            <li>Open <a href="http://localhost:3000">http://localhost:3000</a> in your browser</li>
+        </ol>
+    </div>
+    
+    <div class="card">
+        <h2>Using the Application</h2>
+        <h3>Creating a Project</h3>
+        <ol class="steps">
+            <li>Click "Add New Project" button</li>
+            <li>Fill in the project details</li>
+            <li>Click "Create Project"</li>
+        </ol>
+        
+        <h3>Managing Tasks</h3>
+        <ol class="steps">
+            <li>Click "View Tasks" on a project card</li>
+            <li>Add, edit, or delete tasks for that project</li>
+        </ol>
+        
+        <h3>Updating Project Status</h3>
+        <ol class="steps">
+            <li>Click "Edit" on a project card</li>
+            <li>Update the status and other details</li>
+            <li>Click "Update Project"</li>
+        </ol>
+    </div>
+    
+    <p>For more information, please refer to the <code>README.md</code> file.</p>
+    
+    <a href="http://localhost:3000" class="button">Launch Application (if running)</a>
+</body>
+</html> 

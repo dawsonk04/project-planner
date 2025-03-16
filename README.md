@@ -8,6 +8,7 @@ A simple project tracker application for managing mini SaaS projects and apps fr
 - **Task Management**: Add tasks to projects and track their progress
 - **Status Tracking**: Monitor project and task statuses
 - **Clean UI**: Simple white and mint green theme
+- **Offline Capable**: All data is stored in your browser's localStorage
 
 ## Tech Stack
 
@@ -16,36 +17,103 @@ A simple project tracker application for managing mini SaaS projects and apps fr
 - **State Management**: React Context API
 - **Data Storage**: LocalStorage (client-side)
 
-## Getting Started
+## How to Download and Use
 
-### Prerequisites
+### Option 1: Download the Source Code
 
-- Node.js 18+ 
-- npm or yarn
+1. Click the "Code" button on the GitHub repository page
+2. Select "Download ZIP"
+3. Extract the ZIP file to a location on your computer
 
-### Installation
+### Option 2: Clone the Repository
 
-1. Clone the repository:
+If you have Git installed, you can clone the repository:
+
 ```bash
 git clone <repository-url>
 cd project-planner
 ```
 
-2. Install dependencies:
+## Running the Application
+
+### Easy Installation (Recommended)
+
+This project includes helper scripts to make installation and running the application easier:
+
+#### Windows Users
+1. Double-click the `install.bat` file
+2. The script will check if Node.js is installed, install dependencies, and start the application
+
+#### macOS/Linux Users
+1. Open Terminal in the project directory
+2. Make the script executable: `chmod +x install.sh`
+3. Run the script: `./install.sh`
+4. The script will check if Node.js is installed, install dependencies, and start the application
+
+### Manual Installation
+
+#### Prerequisites
+
+- Node.js 18+ (Download from [nodejs.org](https://nodejs.org/))
+- npm (comes with Node.js) or yarn
+
+#### Installation Steps
+
+1. Open a terminal/command prompt
+2. Navigate to the project directory:
+   ```bash
+   cd path/to/project-planner
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+### Building for Production
+
+If you want to create a production build:
+
 ```bash
-npm install
+npm run build
+npm start
 # or
-yarn install
+yarn build
+yarn start
 ```
 
-3. Run the development server:
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Using the Application
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+1. **Creating a Project**:
+   - Click "Add New Project" button
+   - Fill in the project details
+   - Click "Create Project"
+
+2. **Managing Tasks**:
+   - Click "View Tasks" on a project card
+   - Add, edit, or delete tasks for that project
+
+3. **Updating Project Status**:
+   - Click "Edit" on a project card
+   - Update the status and other details
+   - Click "Update Project"
+
+## Data Storage
+
+All data is stored in your browser's localStorage. This means:
+- Your data persists between sessions
+- Your data is only available on the device and browser you used
+- Clearing browser data will erase your projects
 
 ## Project Structure
 
